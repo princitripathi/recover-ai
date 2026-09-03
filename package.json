@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "bash scripts/recoverai-dev.sh",
+    "dev:frontend": "next dev",
+    "dev:backend": "bash scripts/recoverai-backend.sh",
     "build": "next build",
     "start": "next start",
     "typecheck": "NODE_OPTIONS=--max-old-space-size=1024 tsc --noEmit"

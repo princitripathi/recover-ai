@@ -6,7 +6,12 @@ class Settings(BaseSettings):
     app_name: str = "RecoverAI"
     database_url: str = "sqlite:///./recoverai.db"
     demo_data_path: str = "../data/demo_transactions.csv"
-    cors_origins: list[str] = ["http://localhost:5173", "http://127.0.0.1:5173"]
+    cors_origins: list[str] = [
+        "http://localhost:4000",
+        "http://127.0.0.1:4000",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ]
 
     model_config = SettingsConfigDict(env_file=".env", env_prefix="RECOVERAI_")
 
