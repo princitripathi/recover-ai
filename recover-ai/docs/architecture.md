@@ -18,8 +18,8 @@ Synthetic transaction CSV
 - `backend/app/database.py` owns SQLite schema creation and demo seeding.
 - `backend/app/services/` owns deterministic business calculations.
 - `backend/app/routes/` exposes REST endpoints only.
-- `frontend/src/services/api.js` isolates API calls from UI components.
-- `frontend/src/pages/Dashboard.jsx` renders the merchant-facing dashboard.
+- `src/services/recoverai-api.ts` isolates preview API calls from UI components.
+- `src/app/page.tsx` renders the merchant-facing dashboard in the Ideavo preview.
 
 ## Deferred Stages
 

@@ -6,17 +6,18 @@ This version is a synthetic demo environment only. It does not use real merchant
 
 ## Implemented Functionality
 
+- Next.js React frontend used by the Ideavo preview
 - FastAPI REST API with SQLite persistence
 - Synthetic transaction seeding from `data/demo_transactions.csv`
 - Transaction and recovery-case data models
 - Deterministic revenue-at-risk calculation: failed + abandoned transaction amounts
 - Dashboard summary metrics calculated from the database
-- Responsive React/Vite merchant dashboard with KPI cards, recovery cases, and transaction detail view
+- Responsive React merchant dashboard with KPI cards, recovery cases, and transaction detail view
 - Backend tests for health, transaction retrieval, dashboard summary, and revenue-at-risk calculation
 
 ## Tech Stack
 
-- Frontend: React, Vite, JavaScript
+- Frontend: React with Next.js App Router, TypeScript
 - Backend: Python, FastAPI, Pydantic
 - Database: SQLite with a simple service/database layer
 - Tests: pytest and FastAPI TestClient
@@ -36,14 +37,6 @@ recover-ai/
       services/
     tests/
     requirements.txt
-  frontend/
-    src/
-      components/
-      pages/
-      services/
-      App.jsx
-      App.css
-      main.jsx
   data/demo_transactions.csv
   docs/architecture.md
   README.md
@@ -61,15 +54,17 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
 ```
 
-## Run Frontend
+## Run Frontend Preview
+
+The active frontend application is the repository root Next.js app in `src/app`, not a nested Vite app.
 
 ```bash
-cd recover-ai/frontend
+cd ..
 bun install
-bun run dev
+bun run dev --port 4000
 ```
 
-Set `VITE_API_BASE_URL` if the API is not running at `http://localhost:8000`.
+Set `RECOVERAI_API_BASE_URL` if the API is not running at `http://127.0.0.1:8000`.
 
 ## Test
 
@@ -77,6 +72,6 @@ Set `VITE_API_BASE_URL` if the API is not running at `http://localhost:8000`.
 cd recover-ai/backend
 pytest
 
-cd ../frontend
+cd ../..
 bun run build
 ```
