@@ -1,0 +1,17 @@
+id,customer_id,customer_name,amount,currency,status,payment_method,failure_reason,created_at
+TXN-1001,CUS-501,Aarav Mehta,12999.00,INR,paid,upi,,2026-08-25T10:15:00+05:30
+TXN-1002,CUS-502,Isha Sharma,8499.00,INR,failed,credit_card,issuer_declined,2026-08-25T11:42:00+05:30
+TXN-1003,CUS-503,Rohan Gupta,21999.00,INR,abandoned,netbanking,checkout_timeout,2026-08-25T12:18:00+05:30
+TXN-1004,CUS-504,Meera Iyer,4599.00,INR,paid,debit_card,,2026-08-26T09:04:00+05:30
+TXN-1005,CUS-505,Kabir Khan,15999.00,INR,failed,upi,insufficient_funds,2026-08-26T13:29:00+05:30
+TXN-1006,CUS-506,Ananya Rao,6799.00,INR,pending,upi,bank_processing,2026-08-26T15:55:00+05:30
+TXN-1007,CUS-507,Dev Patel,32499.00,INR,abandoned,wallet,customer_inactive,2026-08-27T10:37:00+05:30
+TXN-1008,CUS-508,Neha Nair,2799.00,INR,paid,wallet,,2026-08-27T12:09:00+05:30
+TXN-1009,CUS-509,Arjun Reddy,11499.00,INR,failed,netbanking,bank_downtime,2026-08-27T17:41:00+05:30
+TXN-1010,CUS-510,Sana Qureshi,7399.00,INR,paid,credit_card,,2026-08-28T08:52:00+05:30
+TXN-1011,CUS-511,Nikhil Bose,18999.00,INR,failed,debit_card,card_expired,2026-08-28T14:11:00+05:30
+TXN-1012,CUS-512,Tara Menon,9999.00,INR,abandoned,upi,checkout_timeout,2026-08-28T19:20:00+05:30
+TXN-1013,CUS-513,Vihaan Shah,5299.00,INR,pending,netbanking,authorization_pending,2026-08-29T09:33:00+05:30
+TXN-1014,CUS-514,Diya Kapoor,24499.00,INR,paid,credit_card,,2026-08-29T11:03:00+05:30
+TXN-1015,CUS-515,Aditya Joshi,13499.00,INR,failed,upi,vpa_invalid,2026-08-29T16:48:00+05:30
+TXN-1016,CUS-516,Leela Das,3899.00,INR,abandoned,debit_card,customer_inactive,2026-08-30T10:06:00+05:30
