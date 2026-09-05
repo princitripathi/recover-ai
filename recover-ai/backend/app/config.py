@@ -13,6 +13,23 @@ class Settings(BaseSettings):
         "http://127.0.0.1:5173",
     ]
 
+    # LLM configuration (Ollama)
+    ollama_url: str = "http://127.0.0.1:11434"
+    ollama_model: str = "qwen2.5:3b"
+    llm_timeout: int = 30
+
+    # Policy engine configuration
+    max_retry_amount: float = 25000.0
+    max_payment_link_amount: float = 50000.0
+    min_ai_confidence: float = 0.6
+    max_retry_count: int = 2
+
+    # Razorpay Test Mode configuration
+    razorpay_key_id: str = ""
+    razorpay_key_secret: str = ""
+    razorpay_base_url: str = "https://api.razorpay.com/v1"
+    razorpay_webhook_secret: str = ""
+
     model_config = SettingsConfigDict(env_file=".env", env_prefix="RECOVERAI_")
 
     @property

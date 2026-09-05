@@ -9,6 +9,7 @@ def _transaction_from_row(row):
     data = dict(row)
     data["amount"] = Decimal(data["amount"])
     data["is_revenue_at_risk"] = data["status"] in AT_RISK_STATUSES
+    data["customer_lifetime_value"] = Decimal(data["customer_lifetime_value"])
     return data
 
 
