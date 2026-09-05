@@ -9,9 +9,9 @@ RecoverAI is a revenue recovery system that turns ambiguous payment failures int
 
 | | |
 |---|---|
-| **GitHub** | `[Public Repository URL]` |
+| **GitHub** | `https://github.com/princitripathi/recover-ai` |
 | **Demo Video** | `[5-minute pitch video URL]` |
-| **Live Preview** | `http://localhost:4000` (Next.js, `bun run dev --port 4000`) · API `http://127.0.0.1:8000` |
+| **Live Demo** | `Local development only` |
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.3.3-black) ![FastAPI](https://img.shields.io/badge/FastAPI-0.116.1-009688) ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6) ![Python](https://img.shields.io/badge/Python-3.12-3776AB) ![Tests](https://img.shields.io/badge/tests-170%20passing-brightgreen) ![Razorpay](https://img.shields.io/badge/Razorpay-Test%20Mode-02042B)
 
@@ -595,7 +595,7 @@ That split is the point. The LLM is inside the controller, not in control of the
 | Project | **RecoverAI** |
 | Track | **AI Revenue Recovery — Razorpay AI Buildathon 2026** |
 | Tagline | *Find the money you're losing. Recover what you can. Escalate what you can't.* |
-| GitHub | `[Public Repository URL]` |
+| GitHub | `https://github.com/princitripathi/recover-ai` |
 | Demo Video | `[5-minute pitch video URL — unlisted YouTube / Loom]` |
 | Demo Login | None (synthetic demo, no auth) |
 | Docs | `recover-ai/docs/architecture.md` · `recover-ai/docs/evaluation.md` |
